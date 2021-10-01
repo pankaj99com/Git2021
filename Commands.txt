@@ -1,0 +1,59 @@
+git config --global  user.name "Pankaj"
+git config --global  user.email "pankaj99.com@gmail.com"
+git config --global  user.email
+git config --global  user.name 
+git config --list
+git init
+git status
+git add -a
+git commit -m "First commit"
+git checkout 	filname.txt
+git checkout -f  { it matches to last commit} very useful if someone deleted the files
+git log
+git log -p -2
+git diff
+git diff --staged{it will compare staging area to last commit} 
+and if we use git checkout -f then it will match the last commit.
+git add -a -m "skipping staging area"
+ls
+clear
+$ ls -lart
+total 18
+drwxr-xr-x 1 pankaj.kumar 1049089  0 Oct  1 13:22 ../
+-rw-r--r-- 1 pankaj.kumar 1049089 10 Oct  1 13:55 TEST2.txt
+-rw-r--r-- 1 pankaj.kumar 1049089 44 Oct  1 14:03 TEST1.txt
+drwxr-xr-x 1 pankaj.kumar 1049089  0 Oct  1 14:03 ./
+drwxr-xr-x 1 pankaj.kumar 1049089  0 Oct  1 14:03 .git/
+git rm --cached waste.txt{ it will be present as untracked file} 
+git rm waste.txt  it will delete the file completely
+ 
+git commit -a -m "Removing waste"
+
+git status -s  [ short and summarized command }
+M TEST2.txt  M reperesents modified
+touch mylog.log
+
+git branch Pankajbranch
+git branch
+  Pankajbranch
+* master
+ git checkout pankajbranch
+Switched to branch 'pankajbranch'
+pankaj.kumar@PAKU-BLR-01 MINGW64 /c/PANKAJLOCALGIT (master)
+$ git merge pankajbranch
+
+$ git checkout -b Selenium
+Switched to a new branch 'Selenium'
+
+$ git remote add origin git@github.com:pankaj99com/Git2021.git
+$ git remote
+$ git remote set-url origin git@github.com:pankaj99com/Git2021.git
+$ git remote
+
+
+git checkout pankajbranch
+Switched to branch 'pankajbranch'
+$ git push -u origin pankajbranch
+
+git clone git@github.com:naveenanimation20/SeleniumInterviewQuestions.git SELENIUMQ/A
+
